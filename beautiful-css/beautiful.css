@@ -3,11 +3,14 @@ body {
 }
 
 .liquid-glass {
-     background:
+       background:
     linear-gradient(
       to bottom,
-      rgba(255,255,255,0.05),
-      rgba(255,255,255,0.1)
+      rgba(255,255,255,0.16) 0%,
+      rgba(255,255,255,0.06) 22%,
+      rgba(255,255,255,0.04) 50%,
+      rgba(255,255,255,0.06) 78%,
+      rgba(255,255,255,0.14) 100%
     );
     box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
     backdrop-filter: blur( 1.75px )  saturate(180%) brightness(105%) contrast(100%);
