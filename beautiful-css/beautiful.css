@@ -189,3 +189,11 @@ body {
 .visible {
     display: block;
 }
+
+ /* Fallback to solid purple color if backdrop-filter is not supported */
+        @supports (not (backdrop-filter: blur( 1.75px )  saturate(180%) brightness(105%) contrast(100%))) {
+            .liquid-glass {
+                background-color: #2e005b !important;
+            }
+        }
+        
