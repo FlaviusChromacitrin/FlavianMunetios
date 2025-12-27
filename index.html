@@ -148,12 +148,14 @@
             <div class="item" id="home">Home</div>
             <div class="item" id="beauticss">Beautiful CSS API</div>
            <div class="item" id="betterHtml">Better HTML API</div>
+           <div class="item" id="webProtection">Web Protection</div>
            <div class="item" id="docs">Documentation</div>
         </div>
         <select id="mobileNavigation">
             <option value="home">Home</option>
             <option value="beauticss">Beautiful CSS API</option>
             <option value="betterHtml">Better HTML API</option>
+            <option value="webProtection">Web Protection</option>
             <option value="docs">Documentation</option>
         </select>
     </header>
@@ -197,12 +199,66 @@
             };
         </script>
     </div>
+<div class="content" id="webProtection">
+  <h2>🛡️ Munetios Web Protection API</h2>
+
+  <p>
+    Munetios Web Protection is a <strong>privacy-first, client-side security layer</strong>
+    designed to help protect websites from <strong>malicious domains, scam embeds,
+    phishing attempts, cryptomining scripts, and invasive third-party tracking</strong>.
+  </p>
+
+  <p>
+    It runs entirely in the browser, performs <strong>no network requests</strong>,
+    and requires <strong>no configuration</strong> to get started.
+    Simply include the script to enhance security and privacy.
+  </p>
+
+  <p style="font-size: 14px; opacity: 0.9;">
+    Use of Munetios Web Protection requires attribution, for example:
+    <em>“This site is protected by Munetios Web Protection.”</em>
+  </p>
+
+  <div style="position: relative; max-width: 100%; display: inline-block;">
+    <pre style="margin:0; max-width: 100%; overflow-x: auto;">
+<code id="webProtectionCode">&lt;script src="https://api.munetios.com/web-protection/protection.min.js"&gt;&lt;/script&gt;</code>
+    </pre>
+
+    <span
+      id="copyWebProtection"
+      title="Copy"
+      class="material-symbols-outlined"
+      style="
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        cursor: pointer;
+        color: #00ffcc;
+        font-size: 22px;
+      "
+    >
+      content_copy
+    </span>
+  </div>
+</div>
+
+    <script>
+      document.getElementById('copyWebProtection').onclick = function () {
+        const code = document.getElementById('webProtectionCode').innerText;
+        navigator.clipboard.writeText(code);
+        this.innerText = 'check';
+        setTimeout(() => {
+          this.innerText = 'content_copy';
+        }, 1200);
+      };
+    </script>
     <div class="content" id="docs">
         <div class="sidebar">
             <ul>
                 <li><a href="#home1">Home</a></li>
                 <li><a href="#beauticss">Beautiful CSS API</a></li>
                 <li><a href="#betterHtml">Better HTML API</a></li>
+                <li><a href="#webProtection">Web Protection API</a></li>
             </ul>
         </div>
         <h2>Documentation</h2>
@@ -243,6 +299,12 @@
             <p>You can use <code>&lt;card&gt;</code> and <code>&lt;cards&gt;</code> to make row of cards.</p>
             <p>You can also use <code>&lt;topbar&gt;</code> to create a top navigation bar.</p>
             <p>Also you can use <code>&lt;logo&gt;</code> to create a logo element.</p>
+        </section>
+        <section id="webProtection">
+            <h3>Web Protection API</h3>
+            <p>Munetios Web Protection is a privacy-first, client-side security layer designed to help protect websites from malicious domains, scam embeds, phishing attempts, cryptomining scripts, and invasive third-party tracking.</p>
+            <p>It runs entirely in the browser, performs no network requests, and requires no configuration to get started. Simply include the script to enhance security and privacy.</p>
+            <p>Use of Munetios Web Protection requires attribution, for example: <em>"This site is protected by Munetios Web Protection."</em></p>
         </section>
     </div>
     <script>
