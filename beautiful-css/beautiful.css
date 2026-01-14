@@ -1,5 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Google+Sans+Flex:opsz,wght,ROND@6..144,1..1000,90&display=swap');
+
 body {
-    font-family: Lexend, system-ui, sans-serif;
+    font-family: 'Google Sans Flex', system-ui, sans-serif;
+    font-variable-settings: ROND '90';
 }
 
 .liquid-glass {
